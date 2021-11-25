@@ -1,0 +1,25 @@
+dependencies:
+  - aave/protocol-v2@1.0.1
+  - Uniswap/v3-core@1.0.0
+compiler:
+  solc:
+    remappings:
+      - '@aave=aave/protocol-v2@1.0.1'
+      - '@uniswap=Uniswap/v3-core@1.0.0'
+dotenv: .env
+wallets:
+  from_key: ${PRIVATE_KEY}
+networks:
+  default: mainnet-fork
+  mainnet-fork:
+    weth_token: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+    dai_token: '0x6b175474e89094c44da98b954eedeac495271d0f'
+    lending_pool_addresses_provider: '0xb53c1a33016b2dc2ff3653530bff1848a515c8c5'
+    dai_eth_price_feed: '0x773616E4d11A78F511299002da57A0a94577F1f4'
+    swap_router: '0xE592427A0AEce92De3Edee1F18E0157C05861564'
+  kovan:
+    weth_token: '0xd0a1e359811322d97991e03f863a0c30c2cf029c'
+    dai_token: '0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD'
+    lending_pool_addresses_provider: '0x88757f2f99175387ab4c6a4b3067c77a695b0349'
+    dai_eth_price_feed: '0x22B58f1EbEDfCA50feF632bD73368b2FdA96D541'
+    swap_router: '0xE592427A0AEce92De3Edee1F18E0157C05861564'
