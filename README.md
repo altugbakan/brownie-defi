@@ -8,6 +8,7 @@ Brownie scripts interacting with DeFi smart contracts.
 ## Aave
 1. Converts ETH to WETH.
 2. Deposits WETH
-3. Borrows DAI.
-4. Swaps WETH to DAI using Uniswap.
-5. Repays DAI debt with interest.
+3. Calculates how much DAI you can borrow using Chainlink Price Feeds.
+4. Borrows DAI.
+5. Swaps WETH to DAI using Uniswap.
+6. Repays DAI debt with interest.
